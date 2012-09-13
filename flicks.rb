@@ -21,16 +21,12 @@ class Movie
 end
 
 movie1 = Movie.new("goonies", 10)
-movie1.thumbs_up
-puts movie1
-puts movie1.title
-puts movie1.rank
-movie1.title = "Gooneys!"
-puts movie1.title
-
 movie2 = Movie.new("ghostbusters", 9)
-movie2.thumbs_down
-puts movie2
-
 movie3 = Movie.new("goldfinger")
-puts movie3
+
+movies = [movie1, movie2, movie3]
+
+movies.each do |m|
+  m.thumbs_up
+  puts m
+end
